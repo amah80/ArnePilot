@@ -103,8 +103,8 @@ ALERTS = [
 
   Alert(
       "longControlDisabled",
-      "Steer Assist Active",
-      "Brake Pressed Acceleration Disabled",
+      "BRAKE PRESSED",
+      "Longitudinal Control Disabled",
       AlertStatus.userPrompt, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, .4, 2., 0.2),
 
@@ -187,8 +187,8 @@ ALERTS = [
 
   Alert(
       "driverMonitorLowAcc",
-      "Driver Monitor Uncertain",
-      "Please look foward",
+      "CHECK DRIVER FACE VISIBILITY",
+      "Driver Monitor Model Output Uncertain",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.steerRequired, AudibleAlert.none, .4, 0., 1.),
 
@@ -282,15 +282,15 @@ ALERTS = [
       Priority.LOW, VisualAlert.none, AudibleAlert.none, .1, .1, .1),
   Alert(
       "preLaneChangeLeft",
-      "Checking Blind Spots",
-      "Monitor other vehicles left lane change initiated",
+      "Steer Left to Start Lane Change",
+      "Monitor Other Vehicles",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.steerRequired, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
 
   Alert(
       "preLaneChangeRight",
-      "Checking Blind Spots",
-      "Monitor other vehicles right lane change initiated",
+      "Steer Right to Start Lane Change",
+      "Monitor Other Vehicles",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.steerRequired, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
 
